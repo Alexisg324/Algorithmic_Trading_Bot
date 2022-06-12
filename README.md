@@ -68,7 +68,7 @@ The plots are consistent, looking like this figure below:
 
 In conclusion, the NEW model performs better than baseline.
 
-# Tuning baseline 
+# Tuning baseline, using alternate ML model:
 The DataOffset was changed from 3 months to 6 months:
 ![](https://github.com/Alexisg324/Algorithmic_Trading_Bot/blob/main/Screen%20Shot%202022-06-12%20at%203.08.00%20PM.png)
 
@@ -78,8 +78,7 @@ Pred results:
 ![](https://github.com/Alexisg324/Algorithmic_Trading_Bot/blob/main/Screen%20Shot%202022-06-12%20at%203.09.12%20PM.png)
 ![](https://github.com/Alexisg324/Algorithmic_Trading_Bot/blob/main/Screen%20Shot%202022-06-12%20at%203.09.37%20PM.png)
 
-In sum, the original DataOffset performs better/more accurate than the models who months are 6.  
-The DecisionTreeClassifier model performed in a different way than the other tuned models.  The heavier weight is now on -1 classs side.  
+In sum, the original DataOffset performs better/more accurate than the models who months are 6.   
 
 ## Final Summary 
 As you can see, the best model is the LogisticRegression model, with respect to three months in DatOffset.
