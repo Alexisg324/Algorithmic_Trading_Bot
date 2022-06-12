@@ -55,6 +55,35 @@ Lastly, the Robot will create a visualization for the user, with actual and stra
 
 ![](https://github.com/Alexisg324/Algorithmic_Trading_Bot/blob/main/Screen%20Shot%202022-05-27%20at%206.20.40%20PM.png)
 
+## Conclusions:
+# The performance of baseline algorithm:
+baseline model for class -1 is .43 and 1 is .56.  The recall for -1 is .44 and 1 is .56.  1 weighs heavier than -1.
+![](https://github.com/Alexisg324/Algorithmic_Trading_Bot/blob/main/Screen%20Shot%202022-06-12%20at%203.01.14%20PM.png)
+
+The new model is about the same.  -1 is .44 and 1 is .56.  1 still weighs over -1, but the results are more concusive given the f1 score
+![](https://github.com/Alexisg324/Algorithmic_Trading_Bot/blob/main/Screen%20Shot%202022-06-12%20at%203.03.20%20PM.png)
+
+The plots are consistent, looking like this figure below: 
+![](https://github.com/Alexisg324/Algorithmic_Trading_Bot/blob/main/Screen%20Shot%202022-05-27%20at%206.20.40%20PM.png)
+
+In conclusion, the NEW model performs better than baseline.
+
+# Tuning baseline 
+The DataOffset was changed from 3 months to 6 months:
+![](https://github.com/Alexisg324/Algorithmic_Trading_Bot/blob/main/Screen%20Shot%202022-06-12%20at%203.08.00%20PM.png)
+
+Pred results: 
+![](https://github.com/Alexisg324/Algorithmic_Trading_Bot/blob/main/Screen%20Shot%202022-06-12%20at%203.08.33%20PM.png)
+
+![](https://github.com/Alexisg324/Algorithmic_Trading_Bot/blob/main/Screen%20Shot%202022-06-12%20at%203.09.12%20PM.png)
+![](https://github.com/Alexisg324/Algorithmic_Trading_Bot/blob/main/Screen%20Shot%202022-06-12%20at%203.09.37%20PM.png)
+
+In sum, the original DataOffset performs better/more accurate than the models who months are 6.  
+The DecisionTreeClassifier model performed in a different way than the other tuned models.  The heavier weight is now on -1 classs side.  
+
+## Final Summary 
+As you can see, the best model is the LogisticRegression model, with respect to three months in DatOffset.
+
 ##  Contributers
 
 Alexis Rose Garcia Alexisg324@gmail.com www.linkedin.com/in/alexis-rose-garcia
