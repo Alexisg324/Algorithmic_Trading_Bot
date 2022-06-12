@@ -78,7 +78,7 @@ Pred results:
 ![](https://github.com/Alexisg324/Algorithmic_Trading_Bot/blob/main/Screen%20Shot%202022-06-12%20at%203.09.12%20PM.png)
 ![](https://github.com/Alexisg324/Algorithmic_Trading_Bot/blob/main/Screen%20Shot%202022-06-12%20at%203.09.37%20PM.png)
 
-In sum, the original DataOffset performs better/more accurate than the models who months are 6.   
+In sum, the original DataOffset performs better/more accurate than the models who months are 6.   The DTC ML Model made the heavier sude at class -1.  Please observe dtc_model_tuning.ipynb for results.  
 
 ## Final Summary 
 As you can see, the best model is the LogisticRegression model, with respect to three months in DatOffset.
